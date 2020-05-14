@@ -18,6 +18,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<!--Google fonts-->
+	<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;500;900&display=swap" rel="stylesheet"> 
 	<?php wp_head(); ?>
 </head>
 
@@ -26,11 +28,17 @@ $container = get_theme_mod( 'understrap_container_type' );
 <div class="site" id="page">
 
 	<!-- ******************* The Navbar Area ******************* -->
+	<div style="background-color: rgb(0, 71, 126); color:#f8f9fa;" class="text-center py-1 mb-5 fixed-top">
+		<div class="container">
+			<a href="#">PRENOTA UN APPUNTAMENTO</a>
+		</div>
+	</div>
+
 	<div id="wrapper-navbar" itemscope itemtype="http://schema.org/WebSite">
 
 		<a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
 
-		<nav class="navbar navbar-expand-md navbar-dark bg-primary">
+		<nav id="barra-menu" class="navbar navbar-expand-md navbar-dark fixed-top">
 
 		<?php if ( 'container' == $container ) : ?>
 			<div class="container">

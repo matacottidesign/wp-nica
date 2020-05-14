@@ -31,3 +31,24 @@
 		}, false );
 	}
 })();
+
+
+
+//Navbar Animation
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function () {
+var currentScrollpos = window.pageYOffset;
+
+	if (prevScrollpos > currentScrollpos) {
+	//document.getElementsByTagName("nav")[0].style.backgroundColor = 'red';
+	} 
+	else {
+	document.getElementsByTagName("nav")[0].style.backgroundColor = 'rgba(100, 197, 184,1)';
+	}
+
+	if(currentScrollpos === 0){
+	document.getElementsByTagName("nav")[0].style.backgroundColor = 'rgba(100, 197, 184,0.6)';
+	}
+
+	prevScrollpos = currentScrollpos;
+};

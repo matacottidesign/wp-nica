@@ -1,1 +1,59 @@
-// This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+body{
+    padding: 0;
+    margin: 0;
+    font-weight: 200; //medium: 500 - black: 900
+    background-color: $light;
+    color: $dark;
+}
+
+h1{color:$secondary; font-weight: 900;}
+h2{color:$secondary; font-weight: 900;}
+h3{color:$secondary; font-weight: 900;}
+h4{color:$secondary; font-weight: 900;}
+h5{color:$secondary; font-weight: 900;}
+h6{color:$secondary; font-weight: 900;}
+
+.py-6 {padding: 4rem 0;}
+.py-7 {padding: 5.5rem 0;}
+.py-8 {padding: 6rem 0;}
+.pt-6 {padding-top: 4rem;}
+.pt-7 {padding-top: 5.5rem;}
+.pt-8 {padding-top: 6rem;}
+.pb-6 {padding-bottom: 4rem;}
+.pb-7 {padding-bottom: 5.5rem;  }
+.pb-8 {padding-bottom: 6rem;}
+
+ul{list-style: none;}
+
+//Header
+nav{
+    margin-top: 32px;
+    transition: 0.5s;
+    background-color: rgba(100, 197, 184,0.6);
+
+    .navbar-brand{
+        font-weight: 900;
+        //color: $secondary !important;
+    }
+
+    .navbar-collapse{
+        ul{
+            li{
+                color: $secondary;
+            }
+        }
+    }
+
+}
+
+.navbar-toggler{
+    border: inherit !important;
+}
+.home-cover{
+    height: 556px; //56px margin top
+    background-image: url("<?php echo get_template_directory_uri(); ?>/../../img/orizzontali/img3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 5px solid $primary;
+}
