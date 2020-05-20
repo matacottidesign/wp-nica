@@ -32,7 +32,7 @@ get_header();
 <div class="pt-8">
     <div class="container">
 
-        <div class="home-carousel card p-5">
+        <div class="home-carousel card p-5 mb-5">
 
             <!--Carosello | Intervallo 10 secondi (10000 millisecondi)-->
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="10000">
@@ -128,6 +128,37 @@ get_header();
                 </div>
             </a>
 
+        </div>
+
+        <h2 class="pt-8 text-center">I nostri trattamenti</h2>
+        <div class="row mb-4">
+        <div class="col-6 col-md-3">
+                <div class="treatment-carousel treatment-carousel-1 card px-3 py-5 mt-5 text-center">
+                <i class="fas fa-tooth"></i>
+                <h6 class="pt-3">Igiene dentale</h6>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="treatment-carousel treatment-carousel-2 card px-3 py-5 mt-5 text-center">
+                <i class="fas fa-tooth"></i>
+                <h6 class="pt-3">Impiantologia</h6>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="treatment-carousel treatment-carousel-3 card px-3 py-5 mt-5 text-center">
+                <i class="fas fa-tooth"></i>
+                <h6 class="pt-3">Faccette dentali</h6>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="treatment-carousel treatment-carousel-4 card px-3 py-5 mt-5 text-center">
+                <i class="fas fa-tooth"></i>
+                <h6 class="pt-3">Pedodonzia</h6>
+                </div>
+            </div>
+        </div>
+        <div class="text-right">
+            <a href="#">Vedi tutti i trattamenti</a>
         </div>
 
         <!--CHI SIAMO-->
