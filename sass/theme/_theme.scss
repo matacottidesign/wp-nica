@@ -27,7 +27,6 @@ ul{list-style: none;}
 
 //Header
 nav{
-    margin-top: 32px;
     transition: 0.5s;
     background-color: rgba(100, 197, 184,0.6);
 
@@ -56,4 +55,25 @@ nav{
     background-repeat: no-repeat;
     background-size: cover;
     border-bottom: 5px solid $primary;
+}
+
+
+
+
+
+
+
+//Footer
+.bottom-btn{
+    background-color: $primary;
+    box-shadow: 2px 5px 33px -2px rgba(0,0,0,.12);
+    color: $white;
+    width: 60px;
+    height: 60px;
+    border-radius: 35%;
+
+
+    i{
+        font-size: 20px;
+    }
 }

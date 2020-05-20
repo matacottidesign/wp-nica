@@ -22,7 +22,12 @@ get_header();
 
 <?php get_template_part('global-templates/carousel-top'); ?>
 
-<div class="home-cover"></div>
+<div class="home-cover d-flex align-items-center text-right">
+    <div class="container">
+        <h1>Dal 1970</h1>
+        <h2>curiamo il tuo sorriso</h2>
+    </div>
+</div>
 
 <div class="pt-8">
     <div class="container">
