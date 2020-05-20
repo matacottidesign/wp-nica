@@ -23,7 +23,7 @@ h6{color:$secondary; font-weight: 900;}
 .pb-7 {padding-bottom: 5.5rem;  }
 .pb-8 {padding-bottom: 6rem;}
 
-ul{list-style: none;}
+ul{list-style: none; padding-left: 0;}
 
 .btn-primary{
     color: $white !important;
@@ -67,8 +67,14 @@ nav{
     background-color: $light;
     border: 10px solid $white;
     border-radius: 35px;
-    box-shadow: 2px 5px 33px -2px rgba(0,0,0,.12);
+    box-shadow: 0px 0px 30px 0px rgba(0,0,0,.1);
 }
+//Mobile
+@media screen and (max-width: 600px) {
+    .home-carousel {
+        height: 420px;
+    }
+  }
 .slide-row{
     div{
         i{
@@ -124,7 +130,7 @@ nav{
 }
 .bottom-btn{
     background-color: $primary;
-    box-shadow: 2px 5px 33px -2px rgba(0,0,0,.12);
+    box-shadow: 0px 0px 30px 0px rgba(0,0,0,.1);
     animation: jump .8s infinite alternate;
     transform-origin: center;
     color: $white;

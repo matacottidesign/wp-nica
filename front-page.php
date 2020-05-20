@@ -34,79 +34,82 @@ get_header();
 
         <div class="home-carousel card p-5">
 
-            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <!--Carosello | Intervallo 10 secondi (10000 millisecondi)-->
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="10000">
                 <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="row">
+                    <div class="carousel-item active">
+                        <div class="row">
 
-                                <div class="col-6 col-md-6">
-                                    <div class="row slide-row">
-                                        <div class="col-12 col-md-2">
-                                            <i class="fas fa-phone-alt"></i>
-                                        </div>
-                                        <div class="col-12 col-md-10">
-                                            <h4>Prenota il tuo appuntamento</h4>
-                                            <div class="d-block">
-                                            <a href="#"><button type="button" class="btn btn-primary mt-3">Chiama lo studio</button></a>
-                                            <a href="#"><button type="button" class="btn btn-danger mt-3">Chiama per urgenze</button></a>
-                                            </div>
+                            <div class="col-6 col-md-6">
+                                <div class="row slide-row">
+                                    <div class="col-12 col-md-2">
+                                        <i class="fas fa-phone-alt"></i>
+                                    </div>
+                                    <div class="col-12 col-md-10">
+                                        <h4>Prenota il tuo appuntamento</h4>
+                                        <div class="d-block">
+                                        <a href="#"><button type="button" class="btn btn-primary mt-3">Chiama lo studio</button></a>
+                                        <a href="#"><button type="button" class="btn btn-danger mt-3">Chiama per urgenze</button></a>
                                         </div>
                                     </div>
                                 </div>
-
-                                <div class="col-6 col-md-6">
-                                    <div class="row slide-row">
-                                        <div class="col-12 col-md-2">
-                                            <i class="far fa-calendar-alt"></i>
-                                        </div>
-                                        <div class="col-12 col-md-10">
-                                            <h4>Orari</h4>
-                                            <p>Orario attuale: </p>
-                                            <hr>
-                                            <ul class="pl-0">
-                                                <div class="d-flex justify-content-between">
-                                                <li>Lun - Ven</li>
-                                                <li><b>9 - 19</b></li>
-                                                </div>
-                                                <div class="d-flex justify-content-between">
-                                                <li>Sab</li>
-                                                <li><b>9 - 13</b></li>
-                                                </div>
-                                                <div class="d-flex justify-content-between">
-                                                <li>Urgenze</li>
-                                                <li><b>h24</b></li>
-                                                </div>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-
                             </div>
+
+                            <div class="col-6 col-md-6">
+                                <div class="row slide-row">
+                                    <div class="col-12 col-md-2">
+                                        <i class="far fa-calendar-alt"></i>
+                                    </div>
+                                    <div class="col-12 col-md-10">
+                                        <h4>Orari</h4>
+                                        <p>Orario attuale: </p>
+                                        <hr>
+                                        <ul>
+                                            <div class="d-flex justify-content-between">
+                                            <li>Lun - Ven</li>
+                                            <li><b>9 - 19</b></li>
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                            <li>Sab</li>
+                                            <li><b>9 - 13</b></li>
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                            <li>Urgenze</li>
+                                            <li><b>h24</b></li>
+                                            </div>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
-                        <div class="carousel-item">
-                            <div class="row">
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
 
-                                <div class="col-6 col-md-6">
-                                    <div class="row slide-row">
-                                        <div class="col-12 col-md-2">
-                                            <i class="fas fa-phone-alt"></i>
-                                        </div>
-                                        <div class="col-12 col-md-10">
-                                            <h4>Prenota il tuo appuntamento</h4>
-                                            <div class="d-block">
-                                            <a href="#"><button type="button" class="btn btn-primary mt-3">Chiama lo studio</button></a>
-                                            <a href="#"><button type="button" class="btn btn-danger mt-3">Chiama per urgenze</button></a>
-                                            </div>
-                                        </div>
+                            <div class="col-6 col-md-6">
+                                <div class="row slide-row">
+                                    <div class="col-12 col-md-2">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="col-12 col-md-10">
+                                        <h4>Dove siamo</h4>
+                                        <ul>
+                                            <li><a href="https://www.google.com/maps/place/NI.CA.+S.r.l./@41.7700256,12.659116,15z/data=!4m5!3m4!1s0x0:0xce9c24cdd6f2334e!8m2!3d41.7700256!4d12.659116">Piazza S. Barnaba, 18</a></li>
+                                            <li>00047 Marino (RM)</li>
+                                            <hr>
+                                            <a href="#">info@nicaodontoiatria.it</a>
+                                        </ul>
                                     </div>
                                 </div>
-
-                                <div class="col-6 col-md-6">
-                                    <div class="row slide-row">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo doloremque porro recusandae, molestiae repellendus omnis quos nihil dolore suscipit, sint dolorum minima tempora sapiente at nam sunt cumque eum corrupti!
-                                    </div>
-
                             </div>
+
+                            <div class="col-6 col-md-6">
+                              
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11902.818538417368!2d12.659116!3d41.7700256!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xce9c24cdd6f2334e!2sNI.CA.%20S.r.l.!5e0!3m2!1sit!2sit!4v1589982525245!5m2!1sit!2sit" class="w-100" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                                
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -129,36 +132,7 @@ get_header();
 
         <!--CHI SIAMO-->
         <div class="pt-8"><?php the_content(); ?></div>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dolorem omnis pariatur quaerat quibusdam optio accusamus soluta, dolores eum ex voluptatem, quae doloribus aut ipsa quidem necessitatibus error, in consectetur.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae error dolores sunt facilis quasi vitae corrupti iste, possimus dolorum expedita, quibusdam nulla, voluptatibus doloremque impedit repudiandae quidem optio a eligendi?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde doloremque suscipit veritatis porro eligendi ea? Impedit eius quis consectetur officia, earum vel aut modi aspernatur architecto enim nemo at ut?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores maiores, atque, facilis molestiae quia dolore, iure doloremque nihil quas ea explicabo voluptatibus enim libero a sunt vero quod excepturi sequi.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum eius numquam adipisci. Ea rem possimus voluptas, earum architecto veritatis reiciendis consequatur facere. Architecto voluptatibus vero quasi iste temporibus. Voluptatibus, aperiam.
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque et laudantium explicabo suscipit fugit nemo molestias, sint sed architecto quia dicta velit aliquam libero ratione expedita aut minus, eius iusto!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui labore quam autem minima, animi nihil quod nesciunt officia dolor temporibus illum obcaecati soluta cum hic maxime nostrum impedit? Totam, numquam.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dolorem omnis pariatur quaerat quibusdam optio accusamus soluta, dolores eum ex voluptatem, quae doloribus aut ipsa quidem necessitatibus error, in consectetur.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae error dolores sunt facilis quasi vitae corrupti iste, possimus dolorum expedita, quibusdam nulla, voluptatibus doloremque impedit repudiandae quidem optio a eligendi?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde doloremque suscipit veritatis porro eligendi ea? Impedit eius quis consectetur officia, earum vel aut modi aspernatur architecto enim nemo at ut?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores maiores, atque, facilis molestiae quia dolore, iure doloremque nihil quas ea explicabo voluptatibus enim libero a sunt vero quod excepturi sequi.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum eius numquam adipisci. Ea rem possimus voluptas, earum architecto veritatis reiciendis consequatur facere. Architecto voluptatibus vero quasi iste temporibus. Voluptatibus, aperiam.
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque et laudantium explicabo suscipit fugit nemo molestias, sint sed architecto quia dicta velit aliquam libero ratione expedita aut minus, eius iusto!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui labore quam autem minima, animi nihil quod nesciunt officia dolor temporibus illum obcaecati soluta cum hic maxime nostrum impedit? Totam, numquam.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dolorem omnis pariatur quaerat quibusdam optio accusamus soluta, dolores eum ex voluptatem, quae doloribus aut ipsa quidem necessitatibus error, in consectetur.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae error dolores sunt facilis quasi vitae corrupti iste, possimus dolorum expedita, quibusdam nulla, voluptatibus doloremque impedit repudiandae quidem optio a eligendi?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde doloremque suscipit veritatis porro eligendi ea? Impedit eius quis consectetur officia, earum vel aut modi aspernatur architecto enim nemo at ut?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores maiores, atque, facilis molestiae quia dolore, iure doloremque nihil quas ea explicabo voluptatibus enim libero a sunt vero quod excepturi sequi.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum eius numquam adipisci. Ea rem possimus voluptas, earum architecto veritatis reiciendis consequatur facere. Architecto voluptatibus vero quasi iste temporibus. Voluptatibus, aperiam.
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque et laudantium explicabo suscipit fugit nemo molestias, sint sed architecto quia dicta velit aliquam libero ratione expedita aut minus, eius iusto!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui labore quam autem minima, animi nihil quod nesciunt officia dolor temporibus illum obcaecati soluta cum hic maxime nostrum impedit? Totam, numquam.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dolorem omnis pariatur quaerat quibusdam optio accusamus soluta, dolores eum ex voluptatem, quae doloribus aut ipsa quidem necessitatibus error, in consectetur.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae error dolores sunt facilis quasi vitae corrupti iste, possimus dolorum expedita, quibusdam nulla, voluptatibus doloremque impedit repudiandae quidem optio a eligendi?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde doloremque suscipit veritatis porro eligendi ea? Impedit eius quis consectetur officia, earum vel aut modi aspernatur architecto enim nemo at ut?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores maiores, atque, facilis molestiae quia dolore, iure doloremque nihil quas ea explicabo voluptatibus enim libero a sunt vero quod excepturi sequi.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum eius numquam adipisci. Ea rem possimus voluptas, earum architecto veritatis reiciendis consequatur facere. Architecto voluptatibus vero quasi iste temporibus. Voluptatibus, aperiam.
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque et laudantium explicabo suscipit fugit nemo molestias, sint sed architecto quia dicta velit aliquam libero ratione expedita aut minus, eius iusto!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui labore quam autem minima, animi nihil quod nesciunt officia dolor temporibus illum obcaecati soluta cum hic maxime nostrum impedit? Totam, numquam.
-        </p>
+
         <?php //get_template_part('global-templates/presentazione'); ?>
 
         <!--MAIN-->
