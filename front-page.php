@@ -32,8 +32,103 @@ get_header();
 <div class="pt-8">
     <div class="container">
 
+        <div class="home-carousel card p-5">
+
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+
+                                <div class="col-6 col-md-6">
+                                    <div class="row slide-row">
+                                        <div class="col-12 col-md-2">
+                                            <i class="fas fa-phone-alt"></i>
+                                        </div>
+                                        <div class="col-12 col-md-10">
+                                            <h4>Prenota il tuo appuntamento</h4>
+                                            <div class="d-block">
+                                            <a href="#"><button type="button" class="btn btn-primary mt-3">Chiama lo studio</button></a>
+                                            <a href="#"><button type="button" class="btn btn-danger mt-3">Chiama per urgenze</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-6 col-md-6">
+                                    <div class="row slide-row">
+                                        <div class="col-12 col-md-2">
+                                            <i class="far fa-calendar-alt"></i>
+                                        </div>
+                                        <div class="col-12 col-md-10">
+                                            <h4>Orari</h4>
+                                            <p>Orario attuale: </p>
+                                            <hr>
+                                            <ul class="pl-0">
+                                                <div class="d-flex justify-content-between">
+                                                <li>Lun - Ven</li>
+                                                <li><b>9 - 19</b></li>
+                                                </div>
+                                                <div class="d-flex justify-content-between">
+                                                <li>Sab</li>
+                                                <li><b>9 - 13</b></li>
+                                                </div>
+                                                <div class="d-flex justify-content-between">
+                                                <li>Urgenze</li>
+                                                <li><b>h24</b></li>
+                                                </div>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+
+                                <div class="col-6 col-md-6">
+                                    <div class="row slide-row">
+                                        <div class="col-12 col-md-2">
+                                            <i class="fas fa-phone-alt"></i>
+                                        </div>
+                                        <div class="col-12 col-md-10">
+                                            <h4>Prenota il tuo appuntamento</h4>
+                                            <div class="d-block">
+                                            <a href="#"><button type="button" class="btn btn-primary mt-3">Chiama lo studio</button></a>
+                                            <a href="#"><button type="button" class="btn btn-danger mt-3">Chiama per urgenze</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-6 col-md-6">
+                                    <div class="row slide-row">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo doloremque porro recusandae, molestiae repellendus omnis quos nihil dolore suscipit, sint dolorum minima tempora sapiente at nam sunt cumque eum corrupti!
+                                    </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div> <!--carousel-->
+            <a class="carousel-control-prev py-2" href="#carouselExampleControls" role="button" data-slide="prev">
+                <div class="text-center">
+                    <span aria-hidden="true"><i class="carousel-arrow fas fa-caret-left"></i></span>
+                    <span class="sr-only">Previous</span>
+                </div>
+            </a>
+            <a class="carousel-control-next pt-1" href="#carouselExampleControls" role="button" data-slide="next">
+                <div class="text-center">
+                    <span aria-hidden="true"><i class="carousel-arrow fas fa-caret-right"></i></span>
+                    <span class="sr-only">Next</span>
+                </div>
+            </a>
+
+        </div>
+
         <!--CHI SIAMO-->
-        <?php the_content(); ?>
+        <div class="pt-8"><?php the_content(); ?></div>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dolorem omnis pariatur quaerat quibusdam optio accusamus soluta, dolores eum ex voluptatem, quae doloribus aut ipsa quidem necessitatibus error, in consectetur.
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae error dolores sunt facilis quasi vitae corrupti iste, possimus dolorum expedita, quibusdam nulla, voluptatibus doloremque impedit repudiandae quidem optio a eligendi?

@@ -25,6 +25,10 @@ h6{color:$secondary; font-weight: 900;}
 
 ul{list-style: none;}
 
+.btn-primary{
+    color: $white !important;
+}
+
 //Header
 nav{
     transition: 0.5s;
@@ -54,7 +58,56 @@ nav{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border-bottom: 5px solid $primary;
+    border-bottom: 10px solid $white;
+}
+.home-carousel{
+    z-index: 1;
+    height: 310px;
+    margin-top: -190px;
+    background-color: $light;
+    border: 10px solid $white;
+    border-radius: 35px;
+    box-shadow: 2px 5px 33px -2px rgba(0,0,0,.12);
+}
+.slide-row{
+    div{
+        i{
+            font-size: 30px;
+            color: $secondary;
+        }
+    }
+}
+.slide-row-primary{
+    background-color: $primary;
+}
+.carousel-arrow{
+    color: $secondary;
+}
+.carousel-control-prev{
+    top: 80%;
+    bottom: inherit;
+    width: inherit;
+    left: 0;
+    font-size: 25px;
+
+    div{
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+    }
+}
+.carousel-control-next{
+    top: 80%;
+    bottom: inherit;
+    width: inherit;
+    right: 0;
+    font-size: 25px;
+
+    div{
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+    }
 }
 
 
@@ -64,16 +117,24 @@ nav{
 
 
 //Footer
+@keyframes jump{
+	to { 
+        transform: translate(0px, -15px); 
+    }
+}
 .bottom-btn{
     background-color: $primary;
     box-shadow: 2px 5px 33px -2px rgba(0,0,0,.12);
+    animation: jump .8s infinite alternate;
+    transform-origin: center;
     color: $white;
     width: 60px;
     height: 60px;
-    border-radius: 35%;
+    border-radius: 20px;
 
 
     i{
         font-size: 20px;
     }
 }
+
