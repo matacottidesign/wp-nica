@@ -21,7 +21,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<!-- Font Awesome Icons -->
 	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 	<!--Google fonts-->
-	<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;500;900&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
 	<?php wp_head(); ?>
 </head>
 

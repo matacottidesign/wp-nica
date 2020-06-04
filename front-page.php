@@ -24,8 +24,7 @@ get_header();
 
 <div class="home-cover d-flex align-items-center text-right">
     <div class="container">
-        <h1>Dal 1970</h1>
-        <h2>curiamo il tuo sorriso</h2>
+        <h1><?php the_field('motto_del_sito'); ?></h1>
     </div>
 </div>
 
@@ -62,20 +61,38 @@ get_header();
                                     </div>
                                     <div class="col-12 col-md-10">
                                         <h4>Orari</h4>
-                                        <p>Orario attuale: </p>
+                                        <p>
+                                            Orario attuale: 
+                                            <?php
+                                            $settimana = [
+
+                                                'Domenica',
+                                                'Lunedì',
+                                                'Martedì',
+                                                'Mercoledì',
+                                                'Giovedì',
+                                                'Venerdì',
+                                                'Sabato'
+                                            
+                                            ]; 
+                                            date_default_timezone_set('Europe/Rome'); 
+                                            echo '<b>'.$settimana[date(w)].', '.date('G:i').'</b>'; 
+                                            ?>
+                                        </p>
                                         <hr>
+                                        <?php //the_field('descrizione_orari'); ?>
                                         <ul>
                                             <div class="d-flex justify-content-between">
-                                            <li>Lun - Ven</li>
-                                            <li><b>9 - 19</b></li>
+                                                <li>Lun - Ven</li>
+                                                <li><b>9 - 19</b></li>
                                             </div>
                                             <div class="d-flex justify-content-between">
-                                            <li>Sab</li>
-                                            <li><b>9 - 13</b></li>
+                                                <li>Sab</li>
+                                                <li><b>9 - 13</b></li>
                                             </div>
                                             <div class="d-flex justify-content-between">
-                                            <li>Urgenze</li>
-                                            <li><b>h24</b></li>
+                                                <li>Urgenze</li>
+                                                <li><b>h24</b></li>
                                             </div>
                                         </ul>
                                     </div>
@@ -93,21 +110,14 @@ get_header();
                                     <i class="fas fa-map-marker-alt"></i>
                                     </div>
                                     <div class="col-12 col-md-10">
-                                        <h4>Dove siamo</h4>
-                                        <ul>
-                                            <li><a href="https://www.google.com/maps/place/NI.CA.+S.r.l./@41.7700256,12.659116,15z/data=!4m5!3m4!1s0x0:0xce9c24cdd6f2334e!8m2!3d41.7700256!4d12.659116">Piazza S. Barnaba, 18</a></li>
-                                            <li>00047 Marino (RM)</li>
-                                            <hr>
-                                            <a href="#">info@nicaodontoiatria.it</a>
-                                        </ul>
+                                        <h4><?php the_field('titolo_bacheca_2'); ?></h4>
+                                        <?php the_field('descrizione_contatti'); ?>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="col-6 col-md-6">
-                              
                                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11902.818538417368!2d12.659116!3d41.7700256!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xce9c24cdd6f2334e!2sNI.CA.%20S.r.l.!5e0!3m2!1sit!2sit!4v1589982525245!5m2!1sit!2sit" class="w-100" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                                
                             </div>
 
                         </div>
@@ -130,11 +140,12 @@ get_header();
 
         </div>
 
+        <!--I nostri trattamenti-->
         <h2 class="pt-8 text-center">I nostri trattamenti</h2>
         <div class="row mb-4">
-        <div class="col-6 col-md-3">
+            <div class="col-6 col-md-3">
                 <div class="treatment-carousel treatment-carousel-1 card px-3 py-5 mt-5 text-center">
-                <i class="fas fa-tooth"></i>
+                <i class="fas fa-shield-alt"></i>
                 <h6 class="pt-3">Igiene dentale</h6>
                 </div>
             </div>
@@ -146,13 +157,13 @@ get_header();
             </div>
             <div class="col-6 col-md-3">
                 <div class="treatment-carousel treatment-carousel-3 card px-3 py-5 mt-5 text-center">
-                <i class="fas fa-tooth"></i>
+                <i class="fas fa-teeth-open"></i>
                 <h6 class="pt-3">Faccette dentali</h6>
                 </div>
             </div>
             <div class="col-6 col-md-3">
                 <div class="treatment-carousel treatment-carousel-4 card px-3 py-5 mt-5 text-center">
-                <i class="fas fa-tooth"></i>
+                <i class="fas fa-baby"></i>
                 <h6 class="pt-3">Pedodonzia</h6>
                 </div>
             </div>
