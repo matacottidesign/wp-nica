@@ -34,7 +34,7 @@ get_header();
         <div class="home-carousel card p-5 mb-5">
 
             <!--Carosello | Intervallo 10 secondi (10000 millisecondi)-->
-            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="10000">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="1000000">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="row">
@@ -62,23 +62,43 @@ get_header();
                                     <div class="col-12 col-md-10">
                                         <h4>Orari</h4>
                                         <p>
-                                            Orario attuale: 
-                                            <?php
-                                            $settimana = [
-
-                                                'Domenica',
-                                                'Lunedì',
-                                                'Martedì',
-                                                'Mercoledì',
-                                                'Giovedì',
-                                                'Venerdì',
-                                                'Sabato'
-                                            
-                                            ]; 
-                                            date_default_timezone_set('Europe/Rome'); 
-                                            echo '<b>'.$settimana[date(w)].', '.date('G:i').'</b>'; 
-                                            ?>
+                                            In questo momento lo studio è 
+                                            <span id="ora_esatta">...</span>
                                         </p>
+                                        <script>
+                                            var data = new Date();
+                                            var Dd, Hh, Mm;
+                                            Dd = data.getDay();
+                                            Hh = data.getHours();
+                                            Mm = data.getMinutes();
+                                            Ss = data.getSeconds();
+
+                                            //var settimana = ['Domenica', 'Lunedì', 'Martedì', 'Mercoledì', 'Giovedì', 'Venerdì', 'Sabato'];
+                                            //document.getElementById("ora_esatta").innerHTML = settimana[Dd] + ', ' + Hh + ':' + Mm + ':' + Ss;
+
+                                            if(Dd >= 1 && Dd <= 5){
+                                                if(Hh >= 9 && Hh <= 19){
+                                                    document.getElementById("ora_esatta").innerHTML = " aperto";
+                                                    document.getElementById("ora_esatta").style.color = "rgb(100, 197, 184)";
+                                                }else{
+                                                    document.getElementById("ora_esatta").innerHTML = " chiuso";
+                                                    document.getElementById("ora_esatta").style.color = "#dc3545";
+                                                }
+                                            }else if(Dd === 6){
+                                                if(Hh >= 9 && Hh <= 13){
+                                                    document.getElementById("ora_esatta").innerHTML = " aperto";
+                                                    document.getElementById("ora_esatta").style.color = "rgb(100, 197, 184)";
+                                                }else{
+                                                    document.getElementById("ora_esatta").innerHTML = " chiuso";
+                                                    document.getElementById("ora_esatta").style.color = "#dc3545";
+                                                }
+                                            }else{
+                                                document.getElementById("ora_esatta").innerHTML = " chiuso";
+                                                document.getElementById("ora_esatta").style.color = "#dc3545";
+                                            }
+
+                                            console.log(Dd);
+                                        </script>
                                         <hr>
                                         <?php //the_field('descrizione_orari'); ?>
                                         <ul>
