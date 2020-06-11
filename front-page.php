@@ -35,6 +35,69 @@ get_header();
         <?php get_template_part('global-templates/custom-nostri-trattamenti'); ?>
 
         <?php get_template_part('global-templates/custom-banner-prenotazioni'); ?>
+
+        <!--Cards-->
+        <div class="bg-skills">
+            <div class="container">
+                <h2 class="pt-8">Articoli recenti</h2>
+                <div class="row">
+
+                    <div class="col-12 col-md-6">
+                        <!--Articolo-->
+                        <div class="pt-5">
+                            <div class="blog-card blog-card-blog">
+                                <div class="blog-card-image mx-5">
+                                    <img class="img" src="https://www.riccardotartaglia.it/blog/wp-content/uploads/2017/11/gulpjs-1030x579.jpg" />
+                                </div>
+                                <div class="blog-table">
+                                    <h3 class="blue-primary text-center">Inizializzazione di Gulp.js</h3>
+                                    <p class="py-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus maxime vel ipsum placeat fugit, nulla, dolor nemo deserunt necessitatibus ratione mollitia delectus, minima velit ad aliquid iure? Laudantium, tempore officia!</p>
+
+                                    <div class="d-flex justify-content-end">
+                                    <div class="pb-2">
+                                    <a href="#">
+                                        <button type="button" class="btn btn-warning text-secondary">
+                                            Leggi articolo
+                                        </button>
+                                    </a>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <!--Articolo-->
+                        <div class="pt-5">
+                            <div class="blog-card blog-card-blog">
+                                <div class="blog-card-image mx-5">
+                                    <img class="img" src="https://www.riccardotartaglia.it/blog/wp-content/uploads/2017/11/gulpjs-1030x579.jpg" />
+                                </div>
+                                <div class="blog-table">
+                                    <h3 class="blue-primary text-center">Inizializzazione di Gulp.js</h3>
+                                    <p class="py-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus maxime vel ipsum placeat fugit, nulla, dolor nemo deserunt necessitatibus ratione mollitia delectus, minima velit ad aliquid iure? Laudantium, tempore officia!</p>
+
+                                    <div class="d-flex justify-content-end">
+                                    <div class="pb-2">
+                                    <a href="#">
+                                        <button type="button" class="btn btn-warning text-secondary">
+                                            Leggi articolo
+                                        </button>
+                                    </a>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+       
+                </div>
+                <div class="pb-8 text-right">
+                    <a href="#">Entra nel Blog</a>
+                </div>
+            </div>
+        </div>
         
 
         

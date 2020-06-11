@@ -46,7 +46,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<ul class="orari-footer">
 					<div class="d-flex justify-content-between">
 						<li><a href="https://www.google.com/maps/place/NI.CA.+S.r.l./@41.7700256,12.659116,15z/data=!4m5!3m4!1s0x0:0xce9c24cdd6f2334e!8m2!3d41.7700256!4d12.659116">Piazza S. Barnaba, 18</a></li>
-						<li>00047 Marino (RM)</li>
+						<li>00047 | Marino (RM)</li>
 					</div>
 				</ul>
 			</div>
