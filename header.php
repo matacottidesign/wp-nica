@@ -59,7 +59,16 @@ $container = get_theme_mod( 'understrap_container_type' );
 					} ?><!-- end custom logo -->
 
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
-					<span class="navbar-toggler-icon"></span>
+					<!-- <span class="navbar-toggler-icon"></span> -->
+					<input type="checkbox" id="checkbox3" class="checkbox3 visuallyHidden">
+					<label for="checkbox3">
+						<div class="hamburger hamburger3">
+							<span class="bar bar1"></span>
+							<span class="bar bar2"></span>
+							<span class="bar bar3"></span>
+							<span class="bar bar4"></span>
+						</div>
+					</label>
 				</button>
 
 				<!-- The WordPress Menu goes here -->
