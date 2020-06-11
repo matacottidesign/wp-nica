@@ -146,7 +146,8 @@ nav{
 //Hero
 .home-cover{
     height: 556px; //56px margin top
-    background-image: url("<?php echo get_template_directory_uri(); ?>/../../img/orizzontali/img3.jpg");
+    background-image: url("<?php echo get_template_directory_uri(); ?>/../../img/orizzontali/img2.jpg");
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

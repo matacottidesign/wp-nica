@@ -24,7 +24,7 @@ get_header();
 
 <div class="home-cover d-flex align-items-center text-right">
     <div class="container">
-        <h2><?php the_field('motto_del_sito'); ?></h2>
+        <h1><?php the_field('motto_del_sito'); ?></h1>
     </div>
 </div>
 
@@ -47,20 +47,32 @@ get_header();
                         <div class="pt-5">
                             <div class="blog-card blog-card-blog">
                                 <div class="blog-card-image mx-5">
-                                    <img class="img" src="https://www.riccardotartaglia.it/blog/wp-content/uploads/2017/11/gulpjs-1030x579.jpg" />
+                                    <?php 
+                                    $image = get_field('immagine_card_1');
+                                    if( !empty( $image ) ): ?>
+                                        <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+                                    <?php endif; ?>
                                 </div>
                                 <div class="blog-table">
-                                    <h3 class="blue-primary text-center">Inizializzazione di Gulp.js</h3>
-                                    <p class="py-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus maxime vel ipsum placeat fugit, nulla, dolor nemo deserunt necessitatibus ratione mollitia delectus, minima velit ad aliquid iure? Laudantium, tempore officia!</p>
+                                    <h3 class="blue-primary text-center"><?php the_field('titolo_card_1'); ?></h3>
+                                    <p class="py-2"><?php the_field('descrizione_card_1'); ?></p>
 
                                     <div class="d-flex justify-content-end">
-                                    <div class="pb-2">
-                                    <a href="#">
-                                        <button type="button" class="btn btn-warning text-secondary">
-                                            Leggi articolo
-                                        </button>
-                                    </a>
-                                    </div>
+                                        <div class="pb-2">
+                                            <?php 
+                                            $link = get_field('link_card_1');
+                                            if( $link ): 
+                                                $link_url = $link['url'];
+                                                $link_title = $link['title'];
+                                                $link_target = $link['target'] ? $link['target'] : '_self';
+                                                ?>
+                                                    <a href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>">
+                                                        <button type="button" class="btn btn-warning">
+                                                            <?php echo esc_html( $link_title ); ?>
+                                                        </button>
+                                                    </a>
+                                            <?php endif; ?>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -72,20 +84,32 @@ get_header();
                         <div class="pt-5">
                             <div class="blog-card blog-card-blog">
                                 <div class="blog-card-image mx-5">
-                                    <img class="img" src="https://www.riccardotartaglia.it/blog/wp-content/uploads/2017/11/gulpjs-1030x579.jpg" />
+                                    <?php 
+                                    $image = get_field('immagine_card_2');
+                                    if( !empty( $image ) ): ?>
+                                        <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+                                    <?php endif; ?>
                                 </div>
                                 <div class="blog-table">
-                                    <h3 class="blue-primary text-center">Inizializzazione di Gulp.js</h3>
-                                    <p class="py-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus maxime vel ipsum placeat fugit, nulla, dolor nemo deserunt necessitatibus ratione mollitia delectus, minima velit ad aliquid iure? Laudantium, tempore officia!</p>
+                                    <h3 class="blue-primary text-center"><?php the_field('titolo_card_2'); ?></h3>
+                                    <p class="py-2"><?php the_field('descrizione_card_2'); ?></p>
 
                                     <div class="d-flex justify-content-end">
-                                    <div class="pb-2">
-                                    <a href="#">
-                                        <button type="button" class="btn btn-warning text-secondary">
-                                            Leggi articolo
-                                        </button>
-                                    </a>
-                                    </div>
+                                        <div class="pb-2">
+                                            <?php 
+                                            $link = get_field('link_card_2');
+                                            if( $link ): 
+                                                $link_url = $link['url'];
+                                                $link_title = $link['title'];
+                                                $link_target = $link['target'] ? $link['target'] : '_self';
+                                                ?>
+                                                    <a href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>">
+                                                        <button type="button" class="btn btn-warning">
+                                                            <?php echo esc_html( $link_title ); ?>
+                                                        </button>
+                                                    </a>
+                                            <?php endif; ?>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
