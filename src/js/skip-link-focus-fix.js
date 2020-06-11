@@ -52,3 +52,4 @@ var currentScrollpos = window.pageYOffset;
 
 	prevScrollpos = currentScrollpos;
 };
+
