@@ -422,6 +422,14 @@ nav{
 .orari-footer{
     color: $white;
 }
+.nica-credits{
+    color: $light;
+    font-size: 14px;
+}
+.credit{
+    color: $light;
+    font-size: 12px;
+}
 
 
 //Contatti
@@ -438,6 +446,9 @@ label{
 }
 input::placeholder{
     color: $gray-500 !important;
+}
+.wpcf7{
+    max-width: 1000px !important;
 }
 .wpcf7-list-item{
     margin-left: 0 !important;

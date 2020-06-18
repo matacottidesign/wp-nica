@@ -27,23 +27,13 @@ if ( ! function_exists( 'understrap_add_site_info' ) ) {
 		$the_theme = wp_get_theme();
 
 		$site_info = sprintf(
-			'<a href="%1$s">%2$s</a><span class="sep"> | </span>%3$s(%4$s)',
-			esc_url( __( 'http://wordpress.org/', 'understrap' ) ),
+			'%1$s',
 			sprintf(
 				/* translators:*/
-				esc_html__( 'Proudly powered by %s', 'understrap' ),
-				'WordPress'
-			),
-			sprintf( // WPCS: XSS ok.
-				/* translators:*/
-				esc_html__( 'Theme: %1$s by %2$s.', 'understrap' ),
-				$the_theme->get( 'Name' ),
-				'<a href="' . esc_url( __( 'http://understrap.com', 'understrap' ) ) . '">understrap.com</a>'
-			),
-			sprintf( // WPCS: XSS ok.
-				/* translators:*/
-				esc_html__( 'Version: %1$s', 'understrap' ),
-				$the_theme->get( 'Version' )
+				esc_html__( 'Realizzato da %1s con %2s & %3s', 'understrap' ),
+				'<a href="https://www.matacottidesign.it">'.esc_html__( 'Matacotti Design', 'understrap' ).'</a>',
+				'<i class="fa fa-heart" style="color:#ff0000"></i>',
+				'<i class="fa fa-wordpress text-white" aria-hidden="true"></i>'
 			)
 		);
 
