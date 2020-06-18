@@ -422,3 +422,23 @@ nav{
 .orari-footer{
     color: $white;
 }
+
+
+//Contatti
+.custom-bg{
+    height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 10px solid $white;
+}
+label{
+    color: $secondary;
+}
+input::placeholder{
+    color: $gray-500 !important;
+}
+.wpcf7-list-item{
+    margin-left: 0 !important;
+}
