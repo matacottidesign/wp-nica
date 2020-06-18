@@ -9,7 +9,7 @@
 defined( 'ABSPATH' ) || exit;
 ?>
 
-<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+<article class="py-8" <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
 	<header class="entry-header">
 
@@ -23,7 +23,7 @@ defined( 'ABSPATH' ) || exit;
 
 	</header><!-- .entry-header -->
 
-	<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
+	<?php echo get_the_post_thumbnail( $post->ID, 'large w-100 pb-5' ); ?>
 
 	<div class="entry-content">
 

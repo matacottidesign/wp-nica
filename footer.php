@@ -50,7 +50,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<ul class="orari-footer">
 					<li>Lunedì – Venerdì: 9:00 – 19:00</li>
 					<li>Sabato: 9:00 – 13:00</li>
-					<li>Urgenze: disponibilità h24</li>
+					<li>Urgenze: disponibilità h24</li>\
 				</ul>
 			</div>
 			<div class="col-6 col-md-3">

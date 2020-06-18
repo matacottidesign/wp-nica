@@ -4,7 +4,11 @@ body{
     font-weight: 300; //medium: 500 - black: 900
     background-color: $light;
     color: $dark;
+    line-height: 1.8;
 }
+
+b{font-weight: 500;}
+strong{font-weight: 500;}
 
 h1{color:$secondary; font-weight: 900;}
 h2{color:$secondary; font-weight: 900;}
@@ -23,7 +27,7 @@ h6{color:$secondary; font-weight: 900;}
 .pb-7 {padding-bottom: 5.5rem;  }
 .pb-8 {padding-bottom: 6rem;}
 
-ul{list-style: none; padding-left: 0;}
+ul{list-style: none; padding-left: 0; margin-bottom: 0;}
 
 .btn-primary{
     color: $white !important;
@@ -452,4 +456,23 @@ input::placeholder{
 }
 .wpcf7-list-item{
     margin-left: 0 !important;
+}
+
+
+//Widget
+#calendar-2{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-top: 1px solid rgba(0,0,0,.1);
+    padding-top: 1rem;
+
+    div{
+        table{
+            width: 100%;
+            text-align: center;
+        }
+        caption{
+            text-align: center;
+        }
+    }
 }
