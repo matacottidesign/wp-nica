@@ -32,7 +32,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				REA 747619
 				</div>
 				<div>
-					<a href="#">
+					<a href="tel:069388398">
 						<button type="button" class="btn btn-primary mt-3 w-100">
 							Chiama lo studio
 						</button>
@@ -50,7 +50,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<ul class="orari-footer">
 					<li>Lunedì – Venerdì: 9:00 – 19:00</li>
 					<li>Sabato: 9:00 – 13:00</li>
-					<li>Urgenze: disponibilità h24</li>\
+					<li>Urgenze: disponibilità h24</li>
 				</ul>
 			</div>
 			<div class="col-6 col-md-3">

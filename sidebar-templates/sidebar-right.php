@@ -22,7 +22,7 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 	<div class="col-md-4 widget-area py-8" id="right-sidebar" role="complementary">
 
 		<div>
-			<a href="#">
+			<a href="tel:069388398">
 				<button type="button" class="btn btn-primary w-100">
 					Chiama lo studio
 				</button>
@@ -44,10 +44,53 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 		<!--Orari-->
 		<h4 class="text-primary pt-5">Orari</h4>
 		<ul>
-			<li>Lunedì – Venerdì: 9:00 – 19:00</li>
-			<li>Sabato: 9:00 – 13:00</li>
-			<li>Urgenze: disponibilità h24</li>
+			<li>Lunedì – Venerdì: <b>9:00 – 19:00</b></li>
+			<li>Sabato: <b>9:00 – 13:00</b></li>
+			<li>Urgenze: disponibilità <b>h24</b></li>
 		</ul>
+
+		<p>
+			In questo momento lo studio è 
+			<span id="ora_esatta">...</span>
+		</p>
+
+		<script>
+			let data = new Date();
+			let Dd, Hh, Mm;
+			Dd = data.getDay();
+			Hh = data.getHours();
+			Mm = data.getMinutes();
+			Ss = data.getSeconds();
+
+			//let settimana = ['Domenica', 'Lunedì', 'Martedì', 'Mercoledì', 'Giovedì', 'Venerdì', 'Sabato'];
+			//document.getElementById("ora_esatta").innerHTML = settimana[Dd] + ', ' + Hh + ':' + Mm + ':' + Ss;
+
+			if(Dd >= 1 && Dd <= 5){
+				//Dal Lun-Ven dalle 9.00 alle 19.00
+				if(Hh >= 9 && Hh <= 18){
+					document.getElementById("ora_esatta").innerHTML = " aperto";
+					document.getElementById("ora_esatta").style.color = "rgb(100, 197, 184)";
+				}else{
+					document.getElementById("ora_esatta").innerHTML = " chiuso";
+					document.getElementById("ora_esatta").style.color = "#dc3545";
+				}
+			}else if(Dd === 6){
+				//Sabato dalle 9.00 alle 13.00
+				if(Hh >= 9 && Hh <= 12){
+					document.getElementById("ora_esatta").innerHTML = " aperto";
+					document.getElementById("ora_esatta").style.color = "rgb(100, 197, 184)";
+				}else{
+					document.getElementById("ora_esatta").innerHTML = " chiuso";
+					document.getElementById("ora_esatta").style.color = "#dc3545";
+				}
+			}else{
+				document.getElementById("ora_esatta").innerHTML = " chiuso";
+				document.getElementById("ora_esatta").style.color = "#dc3545";
+			}
+
+			console.log(Dd);
+			console.log(Hh);
+		</script>
 
 		<hr>
 <?php endif; ?>
