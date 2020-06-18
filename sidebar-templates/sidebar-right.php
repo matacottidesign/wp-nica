@@ -35,14 +35,14 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 		</div>
 
 		<!--Dove siamo-->
-		<h4 class="text-primary pt-5">Dove siamo</h4>
+		<h4 class="text-primary pt-4">Dove siamo</h4>
 		<ul>
 			<li><a href="https://www.google.com/maps/place/NI.CA.+S.r.l./@41.7700256,12.659116,15z/data=!4m5!3m4!1s0x0:0xce9c24cdd6f2334e!8m2!3d41.7700256!4d12.659116">Piazza S. Barnaba, 18</a></li>
 			<li>00047 | Marino (RM)</li>
 		</ul>
 
 		<!--Orari-->
-		<h4 class="text-primary pt-5">Orari</h4>
+		<h4 class="text-primary pt-4">Orari</h4>
 		<ul>
 			<li>Lunedì – Venerdì: <b>9:00 – 19:00</b></li>
 			<li>Sabato: <b>9:00 – 13:00</b></li>
