@@ -1,4 +1,5 @@
-<div class="bg-secondary">
+<?php $img_bg_banner = get_field('immagine_background_banner'); ?>
+<div style="background-image: url('<?php echo $img_bg_banner[url]; ?>');" class="bg-banner">
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-6 py-5">

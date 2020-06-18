@@ -9,26 +9,56 @@
                 <div class="carousel-item active">
                     <div class="row">
 
+                        <!--PRENOTA-->
                         <div class="col-6 col-md-6">
                             <div class="row slide-row">
                                 <div class="col-12 col-md-2">
                                     <i class="fas fa-phone-alt"></i>
                                 </div>
                                 <div class="col-12 col-md-10">
-                                    <h4>Prenota il tuo appuntamento</h4>
-                                    <div><a href="#"><button type="button" class="btn btn-primary mt-3">Chiama lo studio</button></a></div>
-                                    <div><a href="#"><button type="button" class="btn btn-danger mt-3">Chiama per urgenze</button></a></div>
+                                    <h4><?php the_field('titolo_bacheca_1') ?></h4>
+                                    <div>
+                                        <?php 
+                                        $link_chiamata = get_field('link_chiamata');
+                                        if( $link_chiamata): 
+                                            $link_chiamata_url = $link_chiamata['url'];
+                                            $link_chiamata_title = $link_chiamata['title'];
+                                            $link_chiamata_target = $link_chiamata['target'] ? $link_chiamata['target'] : '_self';
+                                            ?>
+                                            <a href="<?php echo esc_url( $link_chiamata_url ); ?>" target="<?php echo esc_attr( $link_chiamata_target ); ?>">
+                                                <button type="button" class="btn btn-primary mt-3">
+                                                <?php echo esc_html( $link_chiamata_title ); ?>
+                                                </button>
+                                            </a>
+                                        <?php endif; ?>
+                                    </div>
+                                    <div>
+                                        <?php 
+                                        $link_urgenze = get_field('link_urgenze');
+                                        if( $link_urgenze): 
+                                            $link_urgenze_url = $link_urgenze['url'];
+                                            $link_urgenze_title = $link_urgenze['title'];
+                                            $link_urgenze_target = $link_urgenze['target'] ? $link_urgenze['target'] : '_self';
+                                            ?>
+                                            <a href="<?php echo esc_url( $link_urgenze_url ); ?>" target="<?php echo esc_attr( $link_urgenze_target ); ?>">
+                                                <button type="button" class="btn btn-danger mt-3">
+                                                <?php echo esc_html( $link_urgenze_title ); ?>
+                                                </button>
+                                            </a>
+                                        <?php endif; ?>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
+                        <!--ORARI-->
                         <div class="col-6 col-md-6">
                             <div class="row slide-row">
                                 <div class="col-12 col-md-2">
                                     <i class="far fa-calendar-alt"></i>
                                 </div>
                                 <div class="col-12 col-md-10">
-                                    <h4>Orari</h4>
+                                    <h4><?php the_field('titolo_bacheca_2') ?></h4>
                                     <p>
                                         In questo momento lo studio è 
                                         <span id="ora_esatta">...</span>
@@ -97,18 +127,20 @@
                 <div class="carousel-item">
                     <div class="row">
 
+                        <!--DOVE SIAMO-->
                         <div class="col-6 col-md-6">
                             <div class="row slide-row">
                                 <div class="col-12 col-md-2">
                                 <i class="fas fa-map-marker-alt"></i>
                                 </div>
                                 <div class="col-12 col-md-10">
-                                    <h4><?php the_field('titolo_bacheca_2'); ?></h4>
+                                    <h4><?php the_field('titolo_bacheca_3'); ?></h4>
                                     <?php the_field('descrizione_contatti'); ?>
                                 </div>
                             </div>
                         </div>
 
+                        <!--MAPPA-->
                         <div class="col-6 col-md-6">
                             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11902.818538417368!2d12.659116!3d41.7700256!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xce9c24cdd6f2334e!2sNI.CA.%20S.r.l.!5e0!3m2!1sit!2sit!4v1589982525245!5m2!1sit!2sit" class="w-100" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                         </div>
