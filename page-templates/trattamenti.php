@@ -128,7 +128,7 @@ get_header(); ?>
                                 <?php if( have_rows('staff_1') ): ?>
                                 <?php while( have_rows('staff_1') ): the_row(); 
                                     // vars
-                                    $img = get_sub_field('immagine_staff_7');
+                                    $img = get_sub_field('immagine_staff_1');
                                     $nome = get_sub_field('nome_cognome');
                                     $mansione = get_sub_field('mansione');
                                     ?>
@@ -149,10 +149,10 @@ get_header(); ?>
                         <?php the_field('descrizione_2') ?>
                         <div class="staff-row mt-5">
                             <div class="dsply justify-content-start">
-                                <?php if( have_rows('staff_1') ): ?>
-                                <?php while( have_rows('staff_1') ): the_row(); 
+                                <?php if( have_rows('staff_2') ): ?>
+                                <?php while( have_rows('staff_2') ): the_row(); 
                                     // vars
-                                    $img = get_sub_field('immagine_staff_7');
+                                    $img = get_sub_field('immagine_staff_2');
                                     $nome = get_sub_field('nome_cognome');
                                     $mansione = get_sub_field('mansione');
                                     ?>
@@ -176,7 +176,7 @@ get_header(); ?>
                                 <?php if( have_rows('staff_3') ): ?>
                                 <?php while( have_rows('staff_3') ): the_row(); 
                                     // vars
-                                    $img = get_sub_field('immagine_staff_7');
+                                    $img = get_sub_field('immagine_staff_3');
                                     $nome = get_sub_field('nome_cognome');
                                     $mansione = get_sub_field('mansione');
                                     ?>
@@ -200,7 +200,7 @@ get_header(); ?>
                                 <?php if( have_rows('staff_4') ): ?>
                                 <?php while( have_rows('staff_4') ): the_row(); 
                                     // vars
-                                    $img = get_sub_field('immagine_staff_7');
+                                    $img = get_sub_field('immagine_staff_4');
                                     $nome = get_sub_field('nome_cognome');
                                     $mansione = get_sub_field('mansione');
                                     ?>
@@ -225,7 +225,7 @@ get_header(); ?>
                                 <?php if( have_rows('staff_5-1') ): ?>
                                 <?php while( have_rows('staff_5-1') ): the_row(); 
                                     // vars
-                                    $img = get_sub_field('immagine_staff_7');
+                                    $img = get_sub_field('immagine_staff_5-1');
                                     $nome = get_sub_field('nome_cognome');
                                     $mansione = get_sub_field('mansione');
                                     ?>
@@ -249,7 +249,7 @@ get_header(); ?>
                                 <?php if( have_rows('staff_5-2') ): ?>
                                 <?php while( have_rows('staff_5-2') ): the_row(); 
                                     // vars
-                                    $img = get_sub_field('immagine_staff_7');
+                                    $img = get_sub_field('immagine_staff_5-2');
                                     $nome = get_sub_field('nome_cognome');
                                     $mansione = get_sub_field('mansione');
                                     ?>
@@ -273,7 +273,7 @@ get_header(); ?>
                                 <?php if( have_rows('staff_5-3') ): ?>
                                 <?php while( have_rows('staff_5-3') ): the_row(); 
                                     // vars
-                                    $img = get_sub_field('immagine_staff_7');
+                                    $img = get_sub_field('immagine_staff_5-3');
                                     $nome = get_sub_field('nome_cognome');
                                     $mansione = get_sub_field('mansione');
                                     ?>
@@ -297,7 +297,7 @@ get_header(); ?>
                                 <?php if( have_rows('staff_5-4') ): ?>
                                 <?php while( have_rows('staff_5-4') ): the_row(); 
                                     // vars
-                                    $img = get_sub_field('immagine_staff_7');
+                                    $img = get_sub_field('immagine_staff_5-4');
                                     $nome = get_sub_field('nome_cognome');
                                     $mansione = get_sub_field('mansione');
                                     ?>
@@ -322,7 +322,7 @@ get_header(); ?>
                                 <?php if( have_rows('staff_6-1') ): ?>
                                 <?php while( have_rows('staff_6-1') ): the_row(); 
                                     // vars
-                                    $img = get_sub_field('immagine_staff_7');
+                                    $img = get_sub_field('immagine_staff_6-1');
                                     $nome = get_sub_field('nome_cognome');
                                     $mansione = get_sub_field('mansione');
                                     ?>
@@ -346,7 +346,7 @@ get_header(); ?>
                                 <?php if( have_rows('staff_6-2') ): ?>
                                 <?php while( have_rows('staff_6-2') ): the_row(); 
                                     // vars
-                                    $img = get_sub_field('immagine_staff_7');
+                                    $img = get_sub_field('immagine_staff_6-2');
                                     $nome = get_sub_field('nome_cognome');
                                     $mansione = get_sub_field('mansione');
                                     ?>
@@ -370,7 +370,7 @@ get_header(); ?>
                                 <?php if( have_rows('staff_6-3') ): ?>
                                 <?php while( have_rows('staff_6-3') ): the_row(); 
                                     // vars
-                                    $img = get_sub_field('immagine_staff_7');
+                                    $img = get_sub_field('immagine_staff_6-3');
                                     $nome = get_sub_field('nome_cognome');
                                     $mansione = get_sub_field('mansione');
                                     ?>
@@ -394,7 +394,7 @@ get_header(); ?>
                                 <?php if( have_rows('staff_6-4') ): ?>
                                 <?php while( have_rows('staff_6-4') ): the_row(); 
                                     // vars
-                                    $img = get_sub_field('immagine_staff_7');
+                                    $img = get_sub_field('immagine_staff_6-4');
                                     $nome = get_sub_field('nome_cognome');
                                     $mansione = get_sub_field('mansione');
                                     ?>
