@@ -476,3 +476,15 @@ input::placeholder{
         }
     }
 }
+
+
+//Trattamenti
+.list-group-item:hover{
+    cursor: pointer;
+}
+.card-body{
+    h6{
+        font-style: italic;
+        padding-bottom: 1rem;
+    }
+}
