@@ -479,12 +479,68 @@ input::placeholder{
 
 
 //Trattamenti
+.list-group-item{
+    color: $white !important;
+    font-weight: 500;
+    background-color: $primary !important;
+    border-radius: 1rem !important;
+    border: inherit !important;
+    margin-bottom: 1rem;
+    transition: 0.3s;
+}
 .list-group-item:hover{
     cursor: pointer;
+    color: $secondary !important;
+    font-weight: 500;
+    //background-color: $secondary;
+}
+#collapseOne{
+    margin-left: 30px;
+    margin-bottom: 1rem;
+}
+#collapseTwo{
+    margin-left: 30px;
+    margin-bottom: 1rem;
+}
+.treatment-card{
+    background-color: $light;
+    border: 10px solid $white;
+    border-radius: 35px;
+    box-shadow: 0px 0px 30px 0px rgba(0,0,0,.1);
+    transition: .5s;
 }
 .card-body{
     h6{
         font-style: italic;
         padding-bottom: 1rem;
+    }
+}
+
+.staff-row{
+    //width: 772px;
+    height: 310px;
+    overflow-x: scroll;
+    overflow-y: inherit;
+}
+.dsply{
+    //display: block ruby;
+    display: inline-flex;
+}
+.staff-card{ 
+    width: 170px;
+    //height: 250px;
+    border-top: 10px solid $white;
+    border-left: 10px solid $white;
+    border-right: 10px solid $white;
+    border-bottom: inherit;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,.1);
+
+    .nome{
+        font-size: 12px;
+    }
+    .mansione{
+        font-size: 14px;
+        font-weight: 500;
+        color: $primary;
     }
 }
