@@ -124,15 +124,15 @@ get_header(); ?>
                     <div class="treatment-card mt-5 card-body">
                         <?php the_field('descrizione_1') ?>
                         <div class="staff-row mt-5">
-                            <div class="dsply justify-content-end">
-                                <?php if( have_rows('staff_7') ): ?>
-                                <?php while( have_rows('staff_7') ): the_row(); 
+                            <div class="dsply justify-content-start">
+                                <?php if( have_rows('staff_1') ): ?>
+                                <?php while( have_rows('staff_1') ): the_row(); 
                                     // vars
                                     $img = get_sub_field('immagine_staff_7');
                                     $nome = get_sub_field('nome_cognome');
                                     $mansione = get_sub_field('mansione');
                                     ?>
-                                    <div class="card text-center staff-card ml-5">
+                                    <div class="card text-center staff-card mr-5">
                                         <img src="<?php echo $img['url']; ?>" alt="<?php echo $img['alt'] ?>" />
                                         <div class="nome pt-2"><?php echo $nome ?></div>
                                         <div class="mansione pb-2"><?php echo $mansione ?></div>
@@ -147,21 +147,19 @@ get_header(); ?>
                 <div class="collapse" id="Endodonzia" data-parent="#accordionExample">
                     <div class="treatment-card mt-5 card-body">
                         <?php the_field('descrizione_2') ?>
-                        <div style="overflow: scroll;" class="row">
-                            <div class="container d-flex justify-content-end">
-                                <?php if( have_rows('staff_7') ): ?>
-                                <?php while( have_rows('staff_7') ): the_row(); 
+                        <div class="staff-row mt-5">
+                            <div class="dsply justify-content-start">
+                                <?php if( have_rows('staff_1') ): ?>
+                                <?php while( have_rows('staff_1') ): the_row(); 
                                     // vars
                                     $img = get_sub_field('immagine_staff_7');
                                     $nome = get_sub_field('nome_cognome');
                                     $mansione = get_sub_field('mansione');
                                     ?>
-                                    <div class="col-12 col-md-3">
-                                    <div class="card text-center staff-card">
+                                    <div class="card text-center staff-card mr-5">
                                         <img src="<?php echo $img['url']; ?>" alt="<?php echo $img['alt'] ?>" />
                                         <div class="nome pt-2"><?php echo $nome ?></div>
                                         <div class="mansione pb-2"><?php echo $mansione ?></div>
-                                    </div>
                                     </div>
                                 <?php endwhile; ?>
                                 <?php endif; ?>
@@ -173,21 +171,19 @@ get_header(); ?>
                 <div class="collapse" id="Ortodonzia" data-parent="#accordionExample">
                     <div class="treatment-card mt-5 card-body">
                         <?php the_field('descrizione_3') ?>
-                        <div style="overflow: scroll;" class="row">
-                            <div class="container d-flex justify-content-end">
-                                <?php if( have_rows('staff_7') ): ?>
-                                <?php while( have_rows('staff_7') ): the_row(); 
+                        <div class="staff-row mt-5">
+                            <div class="dsply justify-content-start">
+                                <?php if( have_rows('staff_3') ): ?>
+                                <?php while( have_rows('staff_3') ): the_row(); 
                                     // vars
                                     $img = get_sub_field('immagine_staff_7');
                                     $nome = get_sub_field('nome_cognome');
                                     $mansione = get_sub_field('mansione');
                                     ?>
-                                    <div class="col-12 col-md-3">
-                                    <div class="card text-center staff-card">
+                                    <div class="card text-center staff-card mr-5">
                                         <img src="<?php echo $img['url']; ?>" alt="<?php echo $img['alt'] ?>" />
                                         <div class="nome pt-2"><?php echo $nome ?></div>
                                         <div class="mansione pb-2"><?php echo $mansione ?></div>
-                                    </div>
                                     </div>
                                 <?php endwhile; ?>
                                 <?php endif; ?>
@@ -199,21 +195,19 @@ get_header(); ?>
                 <div class="collapse" id="Igiene-Orale" data-parent="#accordionExample">
                     <div class="treatment-card mt-5 card-body">
                         <?php the_field('descrizione_4') ?>
-                        <div style="overflow: scroll;" class="row">
-                            <div class="container d-flex justify-content-end">
-                                <?php if( have_rows('staff_7') ): ?>
-                                <?php while( have_rows('staff_7') ): the_row(); 
+                        <div class="staff-row mt-5">
+                            <div class="dsply justify-content-start">
+                                <?php if( have_rows('staff_4') ): ?>
+                                <?php while( have_rows('staff_4') ): the_row(); 
                                     // vars
                                     $img = get_sub_field('immagine_staff_7');
                                     $nome = get_sub_field('nome_cognome');
                                     $mansione = get_sub_field('mansione');
                                     ?>
-                                    <div class="col-12 col-md-3">
-                                    <div class="card text-center staff-card">
+                                    <div class="card text-center staff-card mr-5">
                                         <img src="<?php echo $img['url']; ?>" alt="<?php echo $img['alt'] ?>" />
                                         <div class="nome pt-2"><?php echo $nome ?></div>
                                         <div class="mansione pb-2"><?php echo $mansione ?></div>
-                                    </div>
                                     </div>
                                 <?php endwhile; ?>
                                 <?php endif; ?>
@@ -226,21 +220,19 @@ get_header(); ?>
                 <div class="collapse" id="Denti-Inclusi" data-parent="#accordionExample">
                     <div class="treatment-card mt-5 card-body">
                         <?php the_field('descrizione_5-1') ?>
-                        <div style="overflow: scroll;" class="row">
-                            <div class="container d-flex justify-content-end">
-                                <?php if( have_rows('staff_7') ): ?>
-                                <?php while( have_rows('staff_7') ): the_row(); 
+                        <div class="staff-row mt-5">
+                            <div class="dsply justify-content-start">
+                                <?php if( have_rows('staff_5-1') ): ?>
+                                <?php while( have_rows('staff_5-1') ): the_row(); 
                                     // vars
                                     $img = get_sub_field('immagine_staff_7');
                                     $nome = get_sub_field('nome_cognome');
                                     $mansione = get_sub_field('mansione');
                                     ?>
-                                    <div class="col-12 col-md-3">
-                                    <div class="card text-center staff-card">
+                                    <div class="card text-center staff-card mr-5">
                                         <img src="<?php echo $img['url']; ?>" alt="<?php echo $img['alt'] ?>" />
                                         <div class="nome pt-2"><?php echo $nome ?></div>
                                         <div class="mansione pb-2"><?php echo $mansione ?></div>
-                                    </div>
                                     </div>
                                 <?php endwhile; ?>
                                 <?php endif; ?>
@@ -252,21 +244,19 @@ get_header(); ?>
                 <div class="collapse" id="Cisti" data-parent="#accordionExample">
                     <div class="treatment-card mt-5 card-body">
                         <?php the_field('descrizione_5-2') ?>
-                        <div style="overflow: scroll;" class="row">
-                            <div class="container d-flex justify-content-end">
-                                <?php if( have_rows('staff_7') ): ?>
-                                <?php while( have_rows('staff_7') ): the_row(); 
+                        <div class="staff-row mt-5">
+                            <div class="dsply justify-content-start">
+                                <?php if( have_rows('staff_5-2') ): ?>
+                                <?php while( have_rows('staff_5-2') ): the_row(); 
                                     // vars
                                     $img = get_sub_field('immagine_staff_7');
                                     $nome = get_sub_field('nome_cognome');
                                     $mansione = get_sub_field('mansione');
                                     ?>
-                                    <div class="col-12 col-md-3">
-                                    <div class="card text-center staff-card">
+                                    <div class="card text-center staff-card mr-5">
                                         <img src="<?php echo $img['url']; ?>" alt="<?php echo $img['alt'] ?>" />
                                         <div class="nome pt-2"><?php echo $nome ?></div>
                                         <div class="mansione pb-2"><?php echo $mansione ?></div>
-                                    </div>
                                     </div>
                                 <?php endwhile; ?>
                                 <?php endif; ?>
@@ -278,21 +268,19 @@ get_header(); ?>
                 <div class="collapse" id="Impiantologia" data-parent="#accordionExample">
                     <div class="treatment-card mt-5 card-body">
                         <?php the_field('descrizione_5-3') ?>
-                        <div style="overflow: scroll;" class="row">
-                            <div class="container d-flex justify-content-end">
-                                <?php if( have_rows('staff_7') ): ?>
-                                <?php while( have_rows('staff_7') ): the_row(); 
+                        <div class="staff-row mt-5">
+                            <div class="dsply justify-content-start">
+                                <?php if( have_rows('staff_5-3') ): ?>
+                                <?php while( have_rows('staff_5-3') ): the_row(); 
                                     // vars
                                     $img = get_sub_field('immagine_staff_7');
                                     $nome = get_sub_field('nome_cognome');
                                     $mansione = get_sub_field('mansione');
                                     ?>
-                                    <div class="col-12 col-md-3">
-                                    <div class="card text-center staff-card">
+                                    <div class="card text-center staff-card mr-5">
                                         <img src="<?php echo $img['url']; ?>" alt="<?php echo $img['alt'] ?>" />
                                         <div class="nome pt-2"><?php echo $nome ?></div>
                                         <div class="mansione pb-2"><?php echo $mansione ?></div>
-                                    </div>
                                     </div>
                                 <?php endwhile; ?>
                                 <?php endif; ?>
@@ -304,21 +292,19 @@ get_header(); ?>
                 <div class="collapse" id="Rigenerativa" data-parent="#accordionExample">
                     <div class="treatment-card mt-5 card-body">
                         <?php the_field('descrizione_5-4') ?>
-                        <div style="overflow: scroll;" class="row">
-                            <div class="container d-flex justify-content-end">
-                                <?php if( have_rows('staff_7') ): ?>
-                                <?php while( have_rows('staff_7') ): the_row(); 
+                        <div class="staff-row mt-5">
+                            <div class="dsply justify-content-start">
+                                <?php if( have_rows('staff_5-4') ): ?>
+                                <?php while( have_rows('staff_5-4') ): the_row(); 
                                     // vars
                                     $img = get_sub_field('immagine_staff_7');
                                     $nome = get_sub_field('nome_cognome');
                                     $mansione = get_sub_field('mansione');
                                     ?>
-                                    <div class="col-12 col-md-3">
-                                    <div class="card text-center staff-card">
+                                    <div class="card text-center staff-card mr-5">
                                         <img src="<?php echo $img['url']; ?>" alt="<?php echo $img['alt'] ?>" />
                                         <div class="nome pt-2"><?php echo $nome ?></div>
                                         <div class="mansione pb-2"><?php echo $mansione ?></div>
-                                    </div>
                                     </div>
                                 <?php endwhile; ?>
                                 <?php endif; ?>
@@ -331,21 +317,19 @@ get_header(); ?>
                 <div class="collapse" id="Fissa" data-parent="#accordionExample">
                     <div class="treatment-card mt-5 card-body">
                         <?php the_field('descrizione_6-1') ?>
-                        <div style="overflow: scroll;" class="row">
-                            <div class="container d-flex justify-content-end">
-                                <?php if( have_rows('staff_7') ): ?>
-                                <?php while( have_rows('staff_7') ): the_row(); 
+                        <div class="staff-row mt-5">
+                            <div class="dsply justify-content-start">
+                                <?php if( have_rows('staff_6-1') ): ?>
+                                <?php while( have_rows('staff_6-1') ): the_row(); 
                                     // vars
                                     $img = get_sub_field('immagine_staff_7');
                                     $nome = get_sub_field('nome_cognome');
                                     $mansione = get_sub_field('mansione');
                                     ?>
-                                    <div class="col-12 col-md-3">
-                                    <div class="card text-center staff-card">
+                                    <div class="card text-center staff-card mr-5">
                                         <img src="<?php echo $img['url']; ?>" alt="<?php echo $img['alt'] ?>" />
                                         <div class="nome pt-2"><?php echo $nome ?></div>
                                         <div class="mansione pb-2"><?php echo $mansione ?></div>
-                                    </div>
                                     </div>
                                 <?php endwhile; ?>
                                 <?php endif; ?>
@@ -357,21 +341,19 @@ get_header(); ?>
                 <div class="collapse" id="Rimovibile" data-parent="#accordionExample">
                     <div class="treatment-card mt-5 card-body">
                         <?php the_field('descrizione_6-2') ?>
-                        <div style="overflow: scroll;" class="row">
-                            <div class="container d-flex justify-content-end">
-                                <?php if( have_rows('staff_7') ): ?>
-                                <?php while( have_rows('staff_7') ): the_row(); 
+                        <div class="staff-row mt-5">
+                            <div class="dsply justify-content-start">
+                                <?php if( have_rows('staff_6-2') ): ?>
+                                <?php while( have_rows('staff_6-2') ): the_row(); 
                                     // vars
                                     $img = get_sub_field('immagine_staff_7');
                                     $nome = get_sub_field('nome_cognome');
                                     $mansione = get_sub_field('mansione');
                                     ?>
-                                    <div class="col-12 col-md-3">
-                                    <div class="card text-center staff-card">
+                                    <div class="card text-center staff-card mr-5">
                                         <img src="<?php echo $img['url']; ?>" alt="<?php echo $img['alt'] ?>" />
                                         <div class="nome pt-2"><?php echo $nome ?></div>
                                         <div class="mansione pb-2"><?php echo $mansione ?></div>
-                                    </div>
                                     </div>
                                 <?php endwhile; ?>
                                 <?php endif; ?>
@@ -383,21 +365,19 @@ get_header(); ?>
                 <div class="collapse" id="Combinata" data-parent="#accordionExample">
                     <div class="treatment-card mt-5 card-body">
                         <?php the_field('descrizione_6-3') ?>
-                        <div style="overflow: scroll;" class="row">
-                            <div class="container d-flex justify-content-end">
-                                <?php if( have_rows('staff_7') ): ?>
-                                <?php while( have_rows('staff_7') ): the_row(); 
+                        <div class="staff-row mt-5">
+                            <div class="dsply justify-content-start">
+                                <?php if( have_rows('staff_6-3') ): ?>
+                                <?php while( have_rows('staff_6-3') ): the_row(); 
                                     // vars
                                     $img = get_sub_field('immagine_staff_7');
                                     $nome = get_sub_field('nome_cognome');
                                     $mansione = get_sub_field('mansione');
                                     ?>
-                                    <div class="col-12 col-md-3">
-                                    <div class="card text-center staff-card">
+                                    <div class="card text-center staff-card mr-5">
                                         <img src="<?php echo $img['url']; ?>" alt="<?php echo $img['alt'] ?>" />
                                         <div class="nome pt-2"><?php echo $nome ?></div>
                                         <div class="mansione pb-2"><?php echo $mansione ?></div>
-                                    </div>
                                     </div>
                                 <?php endwhile; ?>
                                 <?php endif; ?>
@@ -409,21 +389,19 @@ get_header(); ?>
                 <div class="collapse" id="Implantare" data-parent="#accordionExample">
                     <div class="treatment-card mt-5 card-body">
                         <?php the_field('descrizione_6-4') ?>
-                        <div style="overflow: scroll;" class="row">
-                            <div class="container d-flex justify-content-end">
-                                <?php if( have_rows('staff_7') ): ?>
-                                <?php while( have_rows('staff_7') ): the_row(); 
+                        <div class="staff-row mt-5">
+                            <div class="dsply justify-content-start">
+                                <?php if( have_rows('staff_6-4') ): ?>
+                                <?php while( have_rows('staff_6-4') ): the_row(); 
                                     // vars
                                     $img = get_sub_field('immagine_staff_7');
                                     $nome = get_sub_field('nome_cognome');
                                     $mansione = get_sub_field('mansione');
                                     ?>
-                                    <div class="col-12 col-md-3">
-                                    <div class="card text-center staff-card">
+                                    <div class="card text-center staff-card mr-5">
                                         <img src="<?php echo $img['url']; ?>" alt="<?php echo $img['alt'] ?>" />
                                         <div class="nome pt-2"><?php echo $nome ?></div>
                                         <div class="mansione pb-2"><?php echo $mansione ?></div>
-                                    </div>
                                     </div>
                                 <?php endwhile; ?>
                                 <?php endif; ?>
@@ -436,8 +414,8 @@ get_header(); ?>
                 <div class="collapse" id="Medicina" data-parent="#accordionExample">
                     <div class="treatment-card mt-5 card-body">
                         <?php the_field('descrizione_7') ?>
-                        <div style="overflow: scroll;" class="row">
-                            <div class="container d-flex justify-content-end">
+                        <div class="staff-row mt-5">
+                            <div class="dsply justify-content-start">
                                 <?php if( have_rows('staff_7') ): ?>
                                 <?php while( have_rows('staff_7') ): the_row(); 
                                     // vars
@@ -445,12 +423,10 @@ get_header(); ?>
                                     $nome = get_sub_field('nome_cognome');
                                     $mansione = get_sub_field('mansione');
                                     ?>
-                                    <div class="col-12 col-md-3">
-                                    <div class="card text-center staff-card">
+                                    <div class="card text-center staff-card mr-5">
                                         <img src="<?php echo $img['url']; ?>" alt="<?php echo $img['alt'] ?>" />
                                         <div class="nome pt-2"><?php echo $nome ?></div>
                                         <div class="mansione pb-2"><?php echo $mansione ?></div>
-                                    </div>
                                     </div>
                                 <?php endwhile; ?>
                                 <?php endif; ?>

@@ -10,7 +10,7 @@
             </div>
             <div class="col-6 col-md-3">
                 <div class="treatment-carousel treatment-carousel-2 card px-3 py-5 mt-5 text-center">
-                <i class="fas fa-tooth"></i>
+                <i class="fas fa-syringe"></i>
                 <h6 class="pt-3"><?php the_field('card_2'); ?></h6>
                 </div>
             </div>
@@ -22,7 +22,7 @@
             </div>
             <div class="col-6 col-md-3">
                 <div class="treatment-carousel treatment-carousel-4 card px-3 py-5 mt-5 text-center">
-                <i class="fas fa-baby"></i>
+                <i class="fas fa-tooth"></i>
                 <h6 class="pt-3"><?php the_field('card_4'); ?></h6>
                 </div>
             </div>
