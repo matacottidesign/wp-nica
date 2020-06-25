@@ -25,15 +25,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<div class="container">
 		<div class="row pb-3">
 			<div class="col-6 col-md-3">
-				<div class="nica-credits pt-5">
-				Centro Odontoiatrico Specialistico <br>
-				NI.CA. s.r.l. <br>
-				C.F./P.IVA 04213081005 <br>
-				REA 747619
-				</div>
-				<div>
+				<div class="pt-5">
 					<a href="tel:069388398">
-						<button type="button" class="btn btn-primary mt-3 w-100">
+						<button type="button" class="btn btn-primary w-100">
 							Chiama lo studio
 						</button>
 					</a>
@@ -43,6 +37,18 @@ $container = get_theme_mod( 'understrap_container_type' );
 						</button>
 					</a>
 				</div>
+
+				<div class="nica-credits mt-3">
+				Centro Odontoiatrico Specialistico <br>
+				NI.CA. s.r.l. <br>
+				C.F./P.IVA 04213081005 <br>
+				REA 747619
+				</div>
+
+				<ul class="mt-3">
+					<li><a href="#">Privacy policy</a></li>
+					<li><a href="#">Cookie policy</a></li>
+				</ul>
 			</div>
 			<div class="col-6 col-md-3">
 				<!--Orari-->
