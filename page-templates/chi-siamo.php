@@ -23,45 +23,45 @@ get_header(); ?>
 </div>
 
 
-    <!--Banner-->
-    <?php $img_bg_banner = get_field('immagine_background_banner'); ?>
-    <div style="background-image: url('<?php echo $img_bg_banner[url]; ?>');" class="bg-banner">
-        <div class="container">
+<!--Banner-->
+<?php $img_bg_banner = get_field('immagine_background_banner'); ?>
+<div style="background-image: url('<?php echo $img_bg_banner[url]; ?>');" class="bg-banner">
+    <div class="container">
 
-                <h2 class="text-white"><?php the_field('titolo_banner_1'); ?></h2>
+            <h2 class="text-white"><?php the_field('titolo_banner_1'); ?></h2>
 
-                <div class="d-flex justify-content-center">
-                <?php 
-                $link = get_field('link_banner_1');
-                if( $link ): 
-                    $link_url = $link['url'];
-                    $link_title = $link['title'];
-                    $link_target = $link['target'] ? $link['target'] : '_self';
-                    ?>
-                        <a href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>">
-                            <button type="button" class="btn btn-primary my-5 mx-5">
-                                <?php echo esc_html( $link_title ); ?>
-                            </button>
-                        </a>
-                <?php endif; ?>
+            <div class="d-flex justify-content-center">
+            <?php 
+            $link = get_field('link_banner_1');
+            if( $link ): 
+                $link_url = $link['url'];
+                $link_title = $link['title'];
+                $link_target = $link['target'] ? $link['target'] : '_self';
+                ?>
+                    <a href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>">
+                        <button type="button" class="btn btn-primary my-5 mx-5">
+                            <?php echo esc_html( $link_title ); ?>
+                        </button>
+                    </a>
+            <?php endif; ?>
 
-                <?php 
-                $link = get_field('link_banner_2');
-                if( $link ): 
-                    $link_url = $link['url'];
-                    $link_title = $link['title'];
-                    $link_target = $link['target'] ? $link['target'] : '_self';
-                    ?>
-                        <a href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>">
-                            <button type="button" class="btn btn-danger my-5 mx-5">
-                                <?php echo esc_html( $link_title ); ?>
-                            </button>
-                        </a>
-                <?php endif; ?>
-                </div>
+            <?php 
+            $link = get_field('link_banner_2');
+            if( $link ): 
+                $link_url = $link['url'];
+                $link_title = $link['title'];
+                $link_target = $link['target'] ? $link['target'] : '_self';
+                ?>
+                    <a href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>">
+                        <button type="button" class="btn btn-danger my-5 mx-5">
+                            <?php echo esc_html( $link_title ); ?>
+                        </button>
+                    </a>
+            <?php endif; ?>
+            </div>
 
-        </div>
     </div>
+</div>
 
 
 <div class="container">
@@ -81,8 +81,28 @@ get_header(); ?>
     </div>
 
     <!--Team-->
-    <div class="pb-8">
+    <div class="py-8">
         <h2><?php the_field('titolo2'); ?></h2>
+
+        <!--Loop-->
+        <div class="row">
+        <?php if( have_rows('team') ): ?>
+        <?php while( have_rows('team') ): the_row(); 
+            // vars
+            $img = get_sub_field('immagine_profilo');
+            $nome = get_sub_field('nome_cognome');
+            $mansione = get_sub_field('mansione');
+            ?>
+            <div class="col-6 col-md-3">
+                <div class="text-center team-card">
+                    <img src="<?php echo $img['url']; ?>" alt="<?php echo $img['alt'] ?>" />
+                    <div class="nome pt-2"><?php echo $nome ?></div>
+                    <div class="mansione pb-2"><?php echo $mansione ?></div>
+                </div>
+            </div>
+        <?php endwhile; ?>
+        <?php endif; ?>
+        </div>
     </div>
 
 </div>

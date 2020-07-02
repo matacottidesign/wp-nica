@@ -102,7 +102,7 @@
 
 <div class="col-12 col-md-9">
     <div class="collapse" id="collapseExample" data-parent="#accordionExample">
-        <div class="treatment-card mt-5 card-body">
+        <div class="treatment-card card-body">
             <?php the_field('descrizione_1') ?>
             <div class="staff-row mt-5">
                 <div class="dsply justify-content-start">
@@ -126,7 +126,7 @@
     </div>
 
     <div class="collapse" id="Endodonzia" data-parent="#accordionExample">
-        <div class="treatment-card mt-5 card-body">
+        <div class="treatment-card card-body">
             <?php the_field('descrizione_2') ?>
             <div class="staff-row mt-5">
                 <div class="dsply justify-content-start">
@@ -150,7 +150,7 @@
     </div>
 
     <div class="collapse" id="Ortodonzia" data-parent="#accordionExample">
-        <div class="treatment-card mt-5 card-body">
+        <div class="treatment-card card-body">
             <?php the_field('descrizione_3') ?>
             <div class="staff-row mt-5">
                 <div class="dsply justify-content-start">
@@ -174,7 +174,7 @@
     </div>
 
     <div class="collapse" id="Igiene-Orale" data-parent="#accordionExample">
-        <div class="treatment-card mt-5 card-body">
+        <div class="treatment-card card-body">
             <?php the_field('descrizione_4') ?>
             <div class="staff-row mt-5">
                 <div class="dsply justify-content-start">
@@ -199,7 +199,7 @@
 
     <!--=================================================================================================-->
     <div class="collapse" id="Denti-Inclusi" data-parent="#accordionExample">
-        <div class="treatment-card mt-5 card-body">
+        <div class="treatment-card card-body">
             <?php the_field('descrizione_5-1') ?>
             <div class="staff-row mt-5">
                 <div class="dsply justify-content-start">
@@ -223,7 +223,7 @@
     </div>
 
     <div class="collapse" id="Cisti" data-parent="#accordionExample">
-        <div class="treatment-card mt-5 card-body">
+        <div class="treatment-card card-body">
             <?php the_field('descrizione_5-2') ?>
             <div class="staff-row mt-5">
                 <div class="dsply justify-content-start">
@@ -247,7 +247,7 @@
     </div>
 
     <div class="collapse" id="Impiantologia" data-parent="#accordionExample">
-        <div class="treatment-card mt-5 card-body">
+        <div class="treatment-card card-body">
             <?php the_field('descrizione_5-3') ?>
             <div class="staff-row mt-5">
                 <div class="dsply justify-content-start">
@@ -271,7 +271,7 @@
     </div>
 
     <div class="collapse" id="Rigenerativa" data-parent="#accordionExample">
-        <div class="treatment-card mt-5 card-body">
+        <div class="treatment-card card-body">
             <?php the_field('descrizione_5-4') ?>
             <div class="staff-row mt-5">
                 <div class="dsply justify-content-start">
@@ -296,7 +296,7 @@
 
     <!--=================================================================================================-->
     <div class="collapse" id="Fissa" data-parent="#accordionExample">
-        <div class="treatment-card mt-5 card-body">
+        <div class="treatment-card card-body">
             <?php the_field('descrizione_6-1') ?>
             <div class="staff-row mt-5">
                 <div class="dsply justify-content-start">
@@ -320,7 +320,7 @@
     </div>
 
     <div class="collapse" id="Rimovibile" data-parent="#accordionExample">
-        <div class="treatment-card mt-5 card-body">
+        <div class="treatment-card card-body">
             <?php the_field('descrizione_6-2') ?>
             <div class="staff-row mt-5">
                 <div class="dsply justify-content-start">
@@ -344,7 +344,7 @@
     </div>
 
     <div class="collapse" id="Combinata" data-parent="#accordionExample">
-        <div class="treatment-card mt-5 card-body">
+        <div class="treatment-card card-body">
             <?php the_field('descrizione_6-3') ?>
             <div class="staff-row mt-5">
                 <div class="dsply justify-content-start">
@@ -368,7 +368,7 @@
     </div>
 
     <div class="collapse" id="Implantare" data-parent="#accordionExample">
-        <div class="treatment-card mt-5 card-body">
+        <div class="treatment-card card-body">
             <?php the_field('descrizione_6-4') ?>
             <div class="staff-row mt-5">
                 <div class="dsply justify-content-start">
@@ -393,7 +393,7 @@
 
     <!-- Medicina Estetica -->
     <div class="collapse" id="Medicina" data-parent="#accordionExample">
-        <div class="treatment-card mt-5 card-body">
+        <div class="treatment-card card-body">
             <?php the_field('descrizione_7') ?>
             <div class="staff-row mt-5">
                 <div class="dsply justify-content-start">

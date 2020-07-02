@@ -542,6 +542,7 @@ input::placeholder{
     border-right: 10px solid $white;
     border-bottom: inherit;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,.1);
+    transition: 0.5s;
 
     .nome{
         font-size: 12px;
@@ -550,5 +551,29 @@ input::placeholder{
         font-size: 14px;
         font-weight: 500;
         color: $primary;
+    }
+}
+.team-card{ 
+    border: 10px $white solid;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,.1);
+    transition: 0.5s;
+
+    .nome{
+        font-size: 14px;
+        transition: 0.5s;
+    }
+    .mansione{
+        font-size: 16px;
+        font-weight: 500;
+        color: $primary;
+        transition: 0.5s;
+    }
+}
+.team-card:hover{
+    transform: translateY(10px);
+    background-color: $secondary;
+
+    .nome{
+        color: $white;
     }
 }

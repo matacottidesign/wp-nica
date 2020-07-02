@@ -68,7 +68,7 @@ get_header(); ?>
 </div>
 
 <div class="container">
-    <div id="accordionExample" class="container py-5">
+    <div id="accordionExample" class="container py-8">
         <?php get_template_part('global-templates/custom-trattamenti-lista'); ?>
     </div>
 </div>
