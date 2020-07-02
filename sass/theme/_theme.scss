@@ -401,6 +401,14 @@ nav{
 
 
 //................................................
+footer{
+    background-image: url("<?php echo get_template_directory_uri(); ?>/../../img/orizzontali/bg_footer.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 //Footer
 @keyframes jump{
 	to { 

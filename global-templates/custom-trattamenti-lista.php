@@ -1,6 +1,6 @@
 <div class="row"> 
     
-<div class="col-12 col-md-3 mt-5 list-group list-group-flush">
+<div class="col-12 col-md-3 list-group list-group-flush">
 
     <a class="list-group-item list-group-item-action" data-toggle="collapse" href="#collapseExample"
         role="button" aria-expanded="true" aria-controls="collapseExample">

@@ -21,7 +21,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	</div>
 </a>
 
-<footer class="bg-secondary mt-1">
+<footer class="mt-1">
 	<div class="container">
 		<div class="row pb-3">
 			<div class="col-6 col-md-3">
